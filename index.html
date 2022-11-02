@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorien Rechner</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h1>Kalorien rechnen</h1>
+    <form>
+        <fieldset>
+            <legend>Körpergröße in cm</legend>
+            <input id="grösse" type="number" min="1" max="230">
+        </fieldset>
+
+        <fieldset>
+            <legend>Alter</legend>
+            <input id="alter" type="number" min="1" max="150">
+        </fieldset>
+
+        <fieldset>
+            <legend>Gewicht in kg</legend>
+            <input id="gewicht" type="number" min="1" max="300">
+        </fieldset>
+
+        <fieldset>
+            <legend for="">Körperbau</legend>
+            <input type="radio" name="built" id="Frau">eher weiblich</input>
+            <input type="radio" name="built" id="Mann">eher männlich</input>
+        </fieldset>
+
+
+        <select id="activity">
+            <option value="0.95" name="Aktivität">Schlafen</option>
+            <option value="1.2" name="Aktivität">Nur Sitzen oder Liegen</option>
+            <option value="1.5" name="Aktivität">Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+                Aktivität in der Freizeit, z.B. Büroarbeit</option>
+
+            <option value="1.7" name="Aktivität">Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit,
+                z.B.
+                Studierende, Fließbandarbeiter, Laboranten, Kraftfahrer</option>
+            <option value="1.9" name="Aktivität">Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer, Kellner,
+                Handwerker, Mechaniker, Hausfrauen</option>
+            </fieldset>
+            <option value="2.2" name="Aktivität">Körperlich anstrengende berufliche Arbeit</option>
+        </select>
+        </fieldset>
+    </form>
+    <button onclick="rechnen(event)" type="button">SENDEN</button>
+
+    <div>
+        <article>
+            <h2>kcal</h2>
+            <h2>kJ</h2>
+        </article>
+        <article>
+            <h2>Grundumsatz</h2>
+            <h2>Gesamtsumsatz</h2>
+        </article>
+        <article>
+            <p id="Gukcal">Angabe Gukcal</p>
+            <p id="GukJ">Angabe GukJ</p>
+        </article>
+        <article>
+            <p id="Geskcal">Angabe Geskcal</p>
+            <p id="GeskJ">Angabe GeskJ</p>
+        </article>
+    </div>
+    <!-- hier eine <table> -->
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

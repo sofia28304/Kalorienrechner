@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  width: 50%;
+}
+body div article {
+  display: flex;
+}
+body #activity {
+  width: 200px;
+}
+body #Gukcal {
+  background-color: aqua;
+}
+body #GukJ {
+  background-color: palevioletred;
+}
+body #Geskcal {
+  background-color: aquamarine;
+}
+body #GeskJ {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

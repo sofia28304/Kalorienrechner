@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 50%;
+
+    div article {
+        display: flex
+    }
+
+    ;
+
+    #activity {
+        width: 200px;
+    }
+
+    #Gukcal {
+        background-color: aqua;
+    }
+
+    #GukJ {
+        background-color: palevioletred;
+    }
+
+    #Geskcal {
+        background-color: aquamarine;
+    }
+
+    #GeskJ {
+        background-color: yellow;
+    }
+}
